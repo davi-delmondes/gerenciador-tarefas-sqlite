@@ -1,3 +1,5 @@
-tarefas.db
-relatorio_tarefas.csv
 __pycache__/
+*.pyc
+data/tarefas.db
+exports/*.csv
+.pytest_cache/
