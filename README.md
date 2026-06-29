@@ -69,21 +69,22 @@ Para os testes automatizados, o projeto utiliza:
 
 ## Estrutura do projeto
 
-| Caminho             | Função                                          |
-| ------------------- | ----------------------------------------------- |
-| `main.py`           | Arquivo principal usado para iniciar o sistema  |
-| `app/config.py`     | Configurações e constantes do projeto           |
-| `app/database.py`   | Funções relacionadas ao banco de dados SQLite   |
-| `app/entradas.py`   | Funções de entrada e validação de dados         |
-| `app/interface.py`  | Funções visuais da interface em terminal        |
-| `app/menus.py`      | Controle dos menus e fluxo principal do sistema |
-| `app/relatorios.py` | Exportação de relatório em CSV                  |
-| `app/tarefas.py`    | Regras e operações relacionadas às tarefas      |
-| `app/utils.py`      | Funções utilitárias do sistema                  |
-| `tests/`            | Testes automatizados do projeto                 |
-| `assets/`           | Imagens usadas na documentação                  |
-| `data/`             | Pasta onde o banco SQLite é gerado              |
-| `exports/`          | Pasta onde o relatório CSV é gerado             |
+| Caminho                | Função                                            |
+| ---------------------- | ------------------------------------------------- |
+| `main.py`              | Arquivo principal usado para iniciar o sistema    |
+| `requirements-dev.txt` | Dependências usadas para desenvolvimento e testes |
+| `app/config.py`        | Configurações e constantes do projeto             |
+| `app/database.py`      | Funções relacionadas ao banco de dados SQLite     |
+| `app/entradas.py`      | Funções de entrada e validação de dados           |
+| `app/interface.py`     | Funções visuais da interface em terminal          |
+| `app/menus.py`         | Controle dos menus e fluxo principal do sistema   |
+| `app/relatorios.py`    | Exportação de relatório em CSV                    |
+| `app/tarefas.py`       | Regras e operações relacionadas às tarefas        |
+| `app/utils.py`         | Funções utilitárias do sistema                    |
+| `tests/`               | Testes automatizados do projeto                   |
+| `assets/`              | Imagens usadas na documentação                    |
+| `data/`                | Pasta onde o banco SQLite é gerado                |
+| `exports/`             | Pasta onde o relatório CSV é gerado               |
 
 ## Como executar
 
@@ -152,6 +153,10 @@ Os testes cobrem:
 * Exportação de relatório CSV
 * Funções utilitárias de formatação
 
+Para instalar as dependências de desenvolvimento, use:
+
+`pip install -r requirements-dev.txt`
+
 Para executar os testes, use:
 
 `python -m pytest -q`
@@ -180,6 +185,7 @@ Esses arquivos são gerados automaticamente e não precisam ser enviados para o 
 * Persistência de dados com SQLite
 * Exportação de relatório em CSV
 * Testes automatizados com `pytest`
+* Dependências de desenvolvimento separadas em `requirements-dev.txt`
 * Uso de type hints
 * Tratamento de erros em operações de banco e arquivo
 * Separação entre banco de dados, interface, menus, tarefas e relatórios
